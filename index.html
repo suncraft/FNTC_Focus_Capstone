@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FNTC Focus Capstone </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="banner">
+  <div class="banner-text">What to eat?</div>
+</header>
+
+<content>
+
+  <div class="header">
+    <h2 style="margin:5px">
+      Add places to eat, or foods you can make, <br>
+      or anything you need to choose between, <br>
+      then press Randomly pick! </h2>
+    <input type="text" id="enterChoice" placeholder="...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+    <button onclick="calcRandom()" class="ranBtn">Randomly pick</button>
+    <div id="foodResult">
+      <h1>Results displayed here:  </h1>
+    </div>
+  </div>
+
+  <ul id="choices">
+    <!-- <li>Test</li>
+    <li>Test #2</li> -->
+    <!-- doesn't actually need to start with a li -->
+    <!-- it will create one on clicking add -->
+  </ul>
+
+</content>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
