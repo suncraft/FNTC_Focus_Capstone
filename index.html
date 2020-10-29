@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FNTC Focus Capstone </title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
 </head>
-<body>
+<body class="darkCombo">
 
 <header class="banner">
   <div class="banner-text">What to eat?</div>
@@ -21,7 +22,7 @@
       or anything you need to choose between, <br>
       then press Randomly pick! </h2>
     <input type="text" id="enterChoice" placeholder="...">
-    <span onclick="newElement()" class="addBtn">Add</span>
+    <span onclick="newChoice()" class="addBtn">Add</span>
     <button onclick="calcRandom()" class="ranBtn">Randomly pick</button>
     <div id="foodResult">
       <h1>Results displayed here:  </h1>
@@ -37,7 +38,6 @@
 
 </content>
 
-<script src="scripts.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 var myNodelist = document.getElementsByTagName("li");
 
 // Create a new list item when clicking on the "Add" button
-function newElement() {
+function newChoice() {
   var li = document.createElement("li");
   var inputValue = document.getElementById("enterChoice").value;
   var t = document.createTextNode(inputValue);
@@ -18,9 +18,9 @@ function newElement() {
 // button click to pick a random li
 function calcRandom() {
   var h1 = document.createElement("h1");
-  const ranli = Math.floor(Math.random() * myNodelist.length);
+  var ranli = Math.floor(Math.random() * myNodelist.length);
   resultpost = myNodelist[ranli].textContent;
-  const r = document.createTextNode(resultpost);
+  var r = document.createTextNode(resultpost);
   h1.appendChild(r);
   console.log(ranli, myNodelist[ranli]); /*Working test ONLY */
   console.log(ranli);

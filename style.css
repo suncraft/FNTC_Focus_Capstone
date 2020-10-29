@@ -1,12 +1,40 @@
 
 :root {
-  /* font-size: 16px; */
-  /* font-family: 'Play'; */
-  --text-primary: #B6BAB3; /* Ivory */
-  --text-secondary: #D71134; /* scarlet*/
-  --bg-primary: #A8B082; /* Lint*/
-  --bg-secondary: #121015; /*Black*/
-  --text-entry: #ffffff; /*white */
+/* Distant Dame Dark color combination */
+  --text-primary: #B6BAB3;
+  --text-secondary: #D71134;
+  --bg-primary: #A8B082;
+  --bg-secondary: #121015;
+  --text-entry: #ffffff;
+    /* Ivory */
+    /* scarlet*/
+    /* Lint*/
+    /*Black*/
+  /*white */
+}
+
+.darkCombo {
+
+}
+
+.lightCombo {
+
+}
+
+
+/* Ombre Effect color combination */
+  /* --text-primary: #B6BAB3;
+  --text-secondary: #838BC2;
+  --bg-primary: #93A387;
+  --bg-secondary: #2D1674;
+  --text-entry: #ffffff; */
+
+  /* Succulent Garden color combination */
+    /* --text-primary: #C1D9B7;
+    --text-secondary: #E5A298;
+    --bg-primary: #00735C;
+    --bg-secondary: #00E091;
+    --text-entry: #ffffff; */
 
  /* To use:
  var(--text-primary)
@@ -15,7 +43,6 @@
  var(--bg-secondary)
  var(--text-entry)
  */
-}
 
 body {
   margin: 0;
