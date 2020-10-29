@@ -1,26 +1,39 @@
-
+/* setting main colors */
 :root {
+  --cyan1: #eaf8f8;
+  --cyan2: #c1eaeb;
+  --cyan3: #5fc9cb;
+  --cyan4: #43c0c2;
+  --cyan5: #2e8b8d;
+}
+
+/* initial theme */
+.blueCombo {
+  --text-primary: var(--cyan1);
+  --text-secondary: var(--cyan2);
+  --bg-primary: var(--cyan4);
+  --bg-secondary: var(--cyan5);
+  --text-entry: var(--cyan1);
+  --buttons: var(--cyan3);
+
+}
+
+/* secondary theme */
+.lightCombo {
+
+}
+
 /* Distant Dame Dark color combination */
-  --text-primary: #B6BAB3;
+  /* --text-primary: #B6BAB3;
   --text-secondary: #D71134;
   --bg-primary: #A8B082;
   --bg-secondary: #121015;
-  --text-entry: #ffffff;
+  --text-entry: #ffffff; */
     /* Ivory */
     /* scarlet*/
     /* Lint*/
     /*Black*/
   /*white */
-}
-
-.darkCombo {
-
-}
-
-.lightCombo {
-
-}
-
 
 /* Ombre Effect color combination */
   /* --text-primary: #B6BAB3;
@@ -63,10 +76,11 @@ ul {
 /* Style the list items */
 ul li {
   /* cursor: pointer; */
+  background-color: var(--text-secondary);
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
+  /* background: #eee; */
   font-size: 18px;
   transition: 0.2s;
 
@@ -94,6 +108,7 @@ ul li {
 
 /* Style the input */
 input {
+  background-color: var(--text-secondary);
   margin: 0;
   border: none;
   border-radius: 0;
@@ -109,7 +124,7 @@ input {
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
+  background: var(--buttons);
   color: #555;
   float: left;
   text-align: center;
@@ -119,22 +134,19 @@ input {
   border-radius: 19px;
 }
 
-.addBtn:hover {
-  background-color: #bbb;
-}
-
 .ranBtn {
   margin-top: 5px;
   /* margin: 0 35% 10vw 35%; */
   padding: 10px;
   width: 30%;
-  background: #d9d9d9;
+  background: var(--buttons);
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 19px;
   outline: none;
+  border-style: none;
 }
 
 .banner {
@@ -146,7 +158,8 @@ input {
 }
 
 .banner-text {
-  background-color: var(--text-primary);
+  background-color: var(--text-secondary);
+  /* background-color: #f4c836; */
   color: black;
   font-size: 10vw;
   margin: 0 auto;
