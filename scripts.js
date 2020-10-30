@@ -40,7 +40,8 @@ function pinkButton() {
 }
 
 //*********************************************************
-//failed code for the randomizer
+//failed code below for the randomizer
+//*********************************************************
 
 // var result = document.createElement("DIV");
 // result.inner = document.createTextNode(ranli, myNodelist[ranli]);
