@@ -1,5 +1,6 @@
-
+//declaring & initializing
 var myNodelist = document.getElementsByTagName("li");
+const body = document.body;
 
 // Create a new list item when clicking on the "Add" button
 function newChoice() {
@@ -25,9 +26,21 @@ function calcRandom() {
   console.log(ranli, myNodelist[ranli]); /*Working test ONLY */
   console.log(ranli);
   console.log(myNodelist[ranli]);
-  console.log(myNodelist[resultpost.value]);
+  console.log(myNodelist[resultpost.value]); /*<- one I want */
   document.getElementById("foodResult").appendChild(h1);
 }
+
+// themes
+function cyanButton() {
+  body.classList.replace("pinkCombo", "cyanCombo");
+}
+
+function pinkButton() {
+  body.classList.replace("cyanCombo", "pinkCombo");
+}
+
+//*********************************************************
+//failed code for the randomizer
 
 // var result = document.createElement("DIV");
 // result.inner = document.createTextNode(ranli, myNodelist[ranli]);

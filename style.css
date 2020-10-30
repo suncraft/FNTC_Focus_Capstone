@@ -5,61 +5,43 @@
   --cyan3: #5fc9cb;
   --cyan4: #43c0c2;
   --cyan5: #2e8b8d;
+  --pink-lavender1: #f8f0f5;
+  --pink-lavender2: #ead1e1;
+  --pink-lavender3: #cf97bc;
+  --pink-lavender4: #b6609a;
+  --pink-lavender5: #883f70;
+  --accent1: red;
+  --accent2: yellow;
 }
 
 /* initial theme */
-.blueCombo {
+.cyanCombo {
   --text-primary: var(--cyan1);
   --text-secondary: var(--cyan2);
   --bg-primary: var(--cyan4);
   --bg-secondary: var(--cyan5);
   --text-entry: var(--cyan1);
   --buttons: var(--cyan3);
+  --accent: var(--accent1);
 
 }
 
 /* secondary theme */
-.lightCombo {
+.pinkCombo {
+  --text-primary: var(--pink-lavender1);
+  --text-secondary: var(--pink-lavender2);
+  --bg-primary: var(--pink-lavender4);
+  --bg-secondary: var(--pink-lavender5);
+  --text-entry: var(--pink-lavender1);
+  --buttons: var(--pink-lavender3);
+  --accent: var(--accent2);
 
 }
-
-/* Distant Dame Dark color combination */
-  /* --text-primary: #B6BAB3;
-  --text-secondary: #D71134;
-  --bg-primary: #A8B082;
-  --bg-secondary: #121015;
-  --text-entry: #ffffff; */
-    /* Ivory */
-    /* scarlet*/
-    /* Lint*/
-    /*Black*/
-  /*white */
-
-/* Ombre Effect color combination */
-  /* --text-primary: #B6BAB3;
-  --text-secondary: #838BC2;
-  --bg-primary: #93A387;
-  --bg-secondary: #2D1674;
-  --text-entry: #ffffff; */
-
-  /* Succulent Garden color combination */
-    /* --text-primary: #C1D9B7;
-    --text-secondary: #E5A298;
-    --bg-primary: #00735C;
-    --bg-secondary: #00E091;
-    --text-entry: #ffffff; */
-
- /* To use:
- var(--text-primary)
- var(--text-secondary)
- var(--bg-primary)
- var(--bg-secondary)
- var(--text-entry)
- */
 
 body {
   margin: 0;
   background-color: var(--bg-primary);
+  transition: 0.3s;
 }
 
 /* Include the padding and border in an element's total width and height */
@@ -68,19 +50,16 @@ body {
 }
 
 ul {
-  margin: 1vh 10vw;
-  /* margin-top: 4vw; */
+  margin: 1vh 20vw;
   padding: 1vw;
 }
 
 /* Style the list items */
 ul li {
-  /* cursor: pointer; */
   background-color: var(--text-secondary);
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  /* background: #eee; */
   font-size: 18px;
   transition: 0.2s;
 
@@ -94,19 +73,23 @@ ul li {
 /* Style the header */
 .header {
   background-color: var(--bg-secondary);
-  padding: 30px 10vw;
+  /* padding: 30px 10vw; */
+  padding: 30px 25vw;
   color: var(--text-entry);
   text-align: center;
+  border-left: 6px solid var(--accent);
 }
 
 /* Clear floats after the header */
-.header:after {
+/* .header:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
-/* Style the input */
+/* seems to work without this^^^ */
+
+/* styles input */
 input {
   background-color: var(--text-secondary);
   margin: 0;
@@ -120,12 +103,12 @@ input {
   outline: none;
 }
 
-/* Style the "Add" button */
+/* Style add button */
 .addBtn {
   padding: 10px;
   width: 25%;
   background: var(--buttons);
-  color: #555;
+  /* color: #555; */
   float: left;
   text-align: center;
   font-size: 16px;
@@ -134,9 +117,9 @@ input {
   border-radius: 19px;
 }
 
+ /* style the randomize button */
 .ranBtn {
   margin-top: 5px;
-  /* margin: 0 35% 10vw 35%; */
   padding: 10px;
   width: 30%;
   background: var(--buttons);
@@ -147,7 +130,31 @@ input {
   border-radius: 19px;
   outline: none;
   border-style: none;
+  border-bottom: 3px solid var(--accent);
 }
+
+/* themes box */
+.themes {
+  background-color: var(--bg-secondary);
+  color: var(--text-entry);
+  width: 100%;
+}
+ /* theme button styles */
+.themeBtn {
+padding: 5px;
+background: var(--buttons);
+color: var(--text-entry);
+text-align: center;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+border-radius: 19px;
+outline: none;
+border-style: none;
+border-bottom: 3px solid var(--text-secondary);
+transform: scale(0.9);
+}
+
 
 .banner {
   background-image: url("benny1080p01.jpg");
@@ -213,10 +220,10 @@ input {
   }
 
   .header {
-    padding: 30px 20vw;
+    padding: 30px 30vw;
   }
 
   ul {
-    margin: 1vh 20vw 2vh 20vw;
+    margin: 1vh 30vw 2vh 30vw;
   }
 }
