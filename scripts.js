@@ -30,10 +30,12 @@ function calcRandom() {
   document.getElementById("foodResult").appendChild(h1);
 }
 
+
 // themes
 function cyanButton() {
   body.classList.replace("pinkCombo", "cyanCombo");
 }
+
 
 function pinkButton() {
   body.classList.replace("cyanCombo", "pinkCombo");

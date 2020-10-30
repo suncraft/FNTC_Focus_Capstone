@@ -41,7 +41,7 @@
 body {
   margin: 0;
   background-color: var(--bg-primary);
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 /* Include the padding and border in an element's total width and height */
@@ -113,7 +113,7 @@ input {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.7s;
   border-radius: 19px;
 }
 
@@ -126,7 +126,7 @@ input {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.7;
   border-radius: 19px;
   outline: none;
   border-style: none;
@@ -147,7 +147,7 @@ color: var(--text-entry);
 text-align: center;
 font-size: 16px;
 cursor: pointer;
-transition: 0.3s;
+transition: 0.7;
 border-radius: 19px;
 outline: none;
 border-style: none;
