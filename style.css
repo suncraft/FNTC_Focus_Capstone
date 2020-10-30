@@ -119,6 +119,7 @@ input {
 
  /* style the randomize button */
 .ranBtn {
+  /* color: var(--accent); */
   margin-top: 5px;
   padding: 10px;
   width: 30%;
@@ -126,7 +127,7 @@ input {
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.7;
+  transition: 0.7s;
   border-radius: 19px;
   outline: none;
   border-style: none;
@@ -147,7 +148,7 @@ color: var(--text-entry);
 text-align: center;
 font-size: 16px;
 cursor: pointer;
-transition: 0.7;
+transition: 0.7s;
 border-radius: 19px;
 outline: none;
 border-style: none;
