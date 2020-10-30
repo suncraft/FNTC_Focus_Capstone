@@ -1,3 +1,5 @@
+//something new is the appendChild, and document modifying
+
 //declaring & initializing
 var myNodelist = document.getElementsByTagName("li");
 const body = document.body;
